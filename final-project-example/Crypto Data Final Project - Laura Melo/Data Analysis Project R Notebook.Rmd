@@ -1,0 +1,67 @@
+---
+title: "Data Analysis Regression Models"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+## This notebook imports my cryptocurrency data set and runs multiple regressions 
+
+### Sources: 
+1. Lecture 10 Notes 
+2. Lecture 11 Notes
+3. https://www.youtube.com/watch?v=xcZib3qAc30 (YouTube)
+4. https://www.codecademy.com/learn/learn-linear-regression-in-r/modules/linear-regression-in-r/cheatsheet
+
+### Preparing Data for Regressions 
+```{r}
+crypto_data <- read.csv("C:/Users/laura/crypto_data.csv") #imports the crypto data set
+head(crypto_data) #views the first few rows 
+names(crypto_data) #checks the column names 
+str(crypto_data) #checks the structure of the data set
+```
+```{r}
+crypto_data$log_market_cap <- log(crypto_data$market_cap) 
+crypto_data$log_volume <- log(crypto_data$total_volume)
+```
+
+### Regression 1: Full Data Set OLS
+```{r}
+model1 <- lm(price_volatility ~ log_volume + log_market_cap, data = crypto_data)#runs regression using volume and market cap to explain price volatility 
+summary(model1) #prints results 
+```
+Regression 1 Interpretation:This regression shows that both trading volume and market cap are statistically significant. Higher trading volume it tied with higher price volatility, while higher market cap is tied with lower price volatility. The R-squared is 0.1499, which means that the model explains about 14.99% of the differences in cryptocurrency volatility. 
+
+### Regression 2: Filtered Data Set
+```{r}
+filtered_data <- subset(crypto_data, market_cap > 10000000000) #filters data set
+model2 <- lm(price_volatility ~ log_volume + log_market_cap,data = filtered_data) #runs regression on the filtered data to see how the volume and market cap explain price volatility 
+
+summary(model2) #prints results 
+```
+Regression 2 Interpretation: This filtered regression only looks at the cryptocurrencies with market caps that are above $10 billion. The results show that trading volume and market cap are not statistically significant, which means that they do not strongly explain price volatility for larger cryptocurrencies. The R-squared of of 0.028 is very low, which means that the model explains very little of the variation in volatility. 
+
+### Regression 3: Regression using a Binary Variable 
+```{r}
+crypto_data$large_crypto <- ifelse(crypto_data$market_cap >= 10000000000, 1, 0) #creates a binary variable where 1 = market cap is $10B or higher and 0 = below $10B
+
+model3 <- lm(price_volatility ~ log_volume + log_market_cap + volume_to_market_cap_ratio + large_crypto, data = crypto_data) #runs regression using market cap, volume, volume to market cap ratio, and the large crypto binary variable to explain price volatility
+summary(model3)
+```
+Regression 3 Interpretation: This regression is statistically significant overall and explains about 22.4% of volatility. However, none of the individual variables are significant. Therefore, the results do not clearly show that larger cryptocurrencies have lower volatility.
+
+### Creating Table using Stargazer 
+```{r}
+#installs stargazer into R 
+install.packages("stargazer") 
+library(stargazer) 
+
+stargazer(model1, model2, model3, #uses the models needed for the table 
+          type = "text",
+          title = "Cryptocurrency Regression Results", #adds the title to the table 
+          dep.var.labels.include = FALSE, #removes dependent variable label 
+          column.labels = c("Research Model", "Filtered Model", "Preferred Model"), #adds labels to each column to the corresponding model 
+          covariate.labels = c("Log Trading Volume","Log Market Cap","Volume-to-Market-Cap Ratio","Large Crypto Dummy"), #adds variable labels to the table 
+          digits = 3, #rounds the numbers to three decimal places 
+          out = "crypto_regression_results.txt") #saves the table into computer 
+```
+
