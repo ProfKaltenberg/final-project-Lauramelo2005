@@ -1769,24 +1769,10 @@ regressions</h2>
 <h3>Preparing Data for Regressions</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHVZM0o1Y0hSdlgyUmhkR0VnUEMwZ2NtVmhaQzVqYzNZb1hDSkRPaTlWYzJWeWN5OXNZWFZ5WVM5amNubHdkRzlmWkdGMFlTNWpjM1pjSWlrZ0kybHRjRzl5ZEhNZ2RHaGxJR055ZVhCMGJ5QmtZWFJoSUhObGRGeHVhR1ZoWkNoamNubHdkRzlmWkdGMFlTa2dJM1pwWlhkeklIUm9aU0JtYVhKemRDQm1aWGNnY205M2N5QmNibUJnWUNKOSAtLT5cblxuYGBgclxuY3J5cHRvX2RhdGEgPC0gcmVhZC5jc3YoXCJDOi9Vc2Vycy9sYXVyYS9jcnlwdG9fZGF0YS5jc3ZcIikgI2ltcG9ydHMgdGhlIGNyeXB0byBkYXRhIHNldFxuaGVhZChjcnlwdG9fZGF0YSkgI3ZpZXdzIHRoZSBmaXJzdCBmZXcgcm93cyBcbmBgYFxuXG48IS0tIHJuYi1zb3VyY2UtZW5kIC0tPlxuIn0= -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY3J5cHRvX2RhdGEgPC0gcmVhZC5jc3YoXCJDOi9Vc2Vycy9sYXVyYS9jcnlwdG9fZGF0YS5jc3ZcIikgI2ltcG9ydHMgdGhlIGNyeXB0byBkYXRhIHNldFxuaGVhZChjcnlwdG9fZGF0YSkgI3ZpZXdzIHRoZSBmaXJzdCBmZXcgcm93cyBcbmBgYCJ9 -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHVZM0o1Y0hSdlgyUmhkR0VnUEMwZ2NtVmhaQzVqYzNZb1hDSkRPaTlWYzJWeWN5OXNZWFZ5WVM5amNubHdkRzlmWkdGMFlTNWpjM1pjSWlrZ0kybHRjRzl5ZEhNZ2RHaGxJR055ZVhCMGJ5QmtZWFJoSUhObGRGeHVibUZ0WlhNb1kzSjVjSFJ2WDJSaGRHRXBJQ05qYUdWamEzTWdkR2hsSUdOdmJIVnRiaUJ1WVcxbGN5QmNibUJnWUNKOSAtLT5cblxuYGBgclxuY3J5cHRvX2RhdGEgPC0gcmVhZC5jc3YoXCJDOi9Vc2Vycy9sYXVyYS9jcnlwdG9fZGF0YS5jc3ZcIikgI2ltcG9ydHMgdGhlIGNyeXB0byBkYXRhIHNldFxubmFtZXMoY3J5cHRvX2RhdGEpICNjaGVja3MgdGhlIGNvbHVtbiBuYW1lcyBcbmBgYFxuXG48IS0tIHJuYi1zb3VyY2UtZW5kIC0tPlxuIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY3J5cHRvX2RhdGEgPC0gcmVhZC5jc3YoXCJDOi9Vc2Vycy9sYXVyYS9jcnlwdG9fZGF0YS5jc3ZcIikgI2ltcG9ydHMgdGhlIGNyeXB0byBkYXRhIHNldFxubmFtZXMoY3J5cHRvX2RhdGEpICNjaGVja3MgdGhlIGNvbHVtbiBuYW1lcyBcbmBgYCJ9 -->
 <pre class="r"><code>crypto_data &lt;- read.csv(&quot;C:/Users/laura/crypto_data.csv&quot;) #imports the crypto data set
-head(crypto_data) #views the first few rows </code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1mcmFtZS1iZWdpbiBleUp0WlhSaFpHRjBZU0k2ZXlKamJHRnpjMlZ6SWpwYkltUmhkR0V1Wm5KaGJXVWlYU3dpYm5KdmR5STZOaXdpYm1OdmJDSTZOeXdpYzNWdGJXRnllU0k2ZXlKRVpYTmpjbWx3ZEdsdmJpSTZXeUprWmlCYk5pRERseUEzWFNKZGZYMHNJbkprWmlJNklrZzBjMGxCUVVGQlFVRkJRVUp6TVZkNk1pOVVUVUpTTW0xeFluQjViMWx0WTFsTmNrNDNWRWxRSzB4WmRuRkZlVTlEU1RCT2JXMHpTMDExZVU1VFNrNXhlbEZHWkhWUWRqVnJRbmd3Y25wVlExcDJVVXBuTVZkNVl6TjZOU3NyT1RrNFZqSnViakY1WmswMGJUVjRUMFZyU1RKSGFtOVdjMUkxZGtsUFZIWTVZME5SVWtkbk5UQjRNRXBFZEV0bFptOTVTbHB5WWsxVGIyTkhURzF2TlZFNVVuY3pMMkZHZFdoM1dXSTVabkpFYzAxcVJIWXpSM2sxUzNKeldsaFllV0ZLTm5OSGRVbFJkME41TmxORVRIZHhhR2huYkhwa1RITktNRzlUTmpsNlltWjVObEVyVEZkRllVZEVSM1J6TW1NNWVVOWFPRmhrUTJkbFlsSjRSakZGU3l0TVNYTnVUR05HYld0ellXeDFNRVprTTJWYVNERkpTMlJKY2pKbFVFc3lPSGxxTkc5MlUxSnVSekJrVEZGYWFqaEtZbVoyYkc5dmVYazRUM05wVnpObVYzUmpMemRRSzNCbE1WRnpZWGh5VFc5Mk1EZERXbFpNUldWd1ZXcGlWa292V205b01XNXZWRmwzTmpGWlVGcFdVbTFYV25CbFYwMXZTRVF3U21oVEt6TjVlSGxYYVRORE0wcGpUa041TVRCWlYzUXhMM0prVm5WaGJVbGtXbVJSVVROSGJHRjRiM013WWpkeWFqa3JWWE5MV2t3eFNFRnljbUZXU1VKSlVFZzROVUpQV1RBME9WUjVTR1l5SzJab1pFd3JkM28yVWtaUFQwVTNaVmxDT0djMmFrZFBXbEZWZUdkS1UyNXNUbE56U1RCM1FVbHdOMUJOU3pWWlIwdEVRVEF6TlRGTVIyODJRMnRzY25neU4yMW1aVWxHYWt4SmNVRm5TRFpRZGxWclF6SlRUbXRTTVZCTGRUUklTRlY0Tm10cmFYRkJiek5vU0ZOWlJVcG5jV0p0VGtNNFowSkNZVmszTURNNU4yNURiVkJ6SzBaaVNqbGpLMGxNZW5aNFFTdE1lV1JJTUc5S1JGUlVSVVphVVhaeGFrOTZRVVJOVFdab1QybHhRa0ZGVFhseVlUSlNSMFZ6TkVGTU4yUXpURTk2TjBOSWJFVXJOREl5Wm1WS1ozZG9XVEY0YWtadGNuZE5WMlYzY0VzeVdHVnhjR2RJVUdGWlVrMDVNMDV6ZFROVFVuVk9OR1EzYm5oVWRUZFNhMjFIY1dGVFZVVjVOR2RSWjNWTGJsTklLMGwzU2pWbmRHMWpRbXBXZFRSUlVVMTNOVkpGZEU1bmFESnFRVVF2VWtzNVNFcGhORWRUUWs5QmMwTlhOMEk1VEZwQ2FrSmlNRkJqZG5wQlMwa3dRbUU1ZG1OUmNtOHpha1JwVEZadVJFUmhUU3MxZVRacFRYWkxkV2wyYVVZd05raDJSalJ3YzBoc05VdHhlbWQ0S3paTUwwNWFkbEJVY1VaaE1tTlZkbE5IU0hCbFFsaHFOMGR6U0ZCeFJTdGtNVGRVYUhrMUt6TXhZMHRsVWprNVFtRllNMEZrWkZBNFJXWnhkVlpMVFVod05uSmhjbUUxZFZoT1dHZG1RVmRVY1RKalIySkhaWEJxTjJKV1VGaDVjaXRaWVdoNFZrcFlPRmgzUmpKWU9FUlBNVTFHYVhGUlMwRkJRVDBpZlE9PSAtLT5cblxuPGRpdiBkYXRhLXBhZ2VkdGFibGU9XCJmYWxzZVwiPlxuICA8c2NyaXB0IGRhdGEtcGFnZWR0YWJsZS1zb3VyY2UgdHlwZT1cImFwcGxpY2F0aW9uL2pzb25cIj5cbntcImNvbHVtbnNcIjpbe1wibGFiZWxcIjpbXCJcIl0sXCJuYW1lXCI6W1wiX3JuX1wiXSxcInR5cGVcIjpbXCJcIl0sXCJhbGlnblwiOltcImxlZnRcIl19LHtcImxhYmVsXCI6W1wibmFtZVwiXSxcIm5hbWVcIjpbMV0sXCJ0eXBlXCI6W1wiY2hyXCJdLFwiYWxpZ25cIjpbXCJsZWZ0XCJdfSx7XCJsYWJlbFwiOltcImN1cnJlbnRfcHJpY2VcIl0sXCJuYW1lXCI6WzJdLFwidHlwZVwiOltcImRibFwiXSxcImFsaWduXCI6W1wicmlnaHRcIl19LHtcImxhYmVsXCI6W1wibWFya2V0X2NhcFwiXSxcIm5hbWVcIjpbM10sXCJ0eXBlXCI6W1wiZGJsXCJdLFwiYWxpZ25cIjpbXCJyaWdodFwiXX0se1wibGFiZWxcIjpbXCJ0b3RhbF92b2x1bWVcIl0sXCJuYW1lXCI6WzRdLFwidHlwZVwiOltcImRibFwiXSxcImFsaWduXCI6W1wicmlnaHRcIl19LHtcImxhYmVsXCI6W1wicHJpY2VfY2hhbmdlX3BlcmNlbnRhZ2VfMjRoXCJdLFwibmFtZVwiOls1XSxcInR5cGVcIjpbXCJkYmxcIl0sXCJhbGlnblwiOltcInJpZ2h0XCJdfSx7XCJsYWJlbFwiOltcInByaWNlX3ZvbGF0aWxpdHlcIl0sXCJuYW1lXCI6WzZdLFwidHlwZVwiOltcImRibFwiXSxcImFsaWduXCI6W1wicmlnaHRcIl19LHtcImxhYmVsXCI6W1widm9sdW1lX3RvX21hcmtldF9jYXBfcmF0aW9cIl0sXCJuYW1lXCI6WzddLFwidHlwZVwiOltcImRibFwiXSxcImFsaWduXCI6W1wicmlnaHRcIl19XSxcImRhdGFcIjpbe1wiMVwiOlwiQml0Y29pblwiLFwiMlwiOlwiOC4xNTE1MGUrMDRcIixcIjNcIjpcIjEuNjMyMzAwZSsxMlwiLFwiNFwiOlwiNDU5MDA1NDQyNzhcIixcIjVcIjpcIi0wLjE5NDM1XCIsXCI2XCI6XCIwLjE5NDM1XCIsXCI3XCI6XCIwLjAyODEyMDE1XCIsXCJfcm5fXCI6XCIxXCJ9LHtcIjFcIjpcIkV0aGVyZXVtXCIsXCIyXCI6XCIyLjM1MDgwZSswM1wiLFwiM1wiOlwiMi44MzY4MDBlKzExXCIsXCI0XCI6XCIyMTQ3NTM0Njc0NVwiLFwiNVwiOlwiLTEuMDEzOTBcIixcIjZcIjpcIjEuMDEzOTBcIixcIjdcIjpcIjAuMDc1NzAyODFcIixcIl9ybl9cIjpcIjJcIn0se1wiMVwiOlwiVGV0aGVyXCIsXCIyXCI6XCI5Ljk5ODUwZS0wMVwiLFwiM1wiOlwiMS44OTU0NjBlKzExXCIsXCI0XCI6XCI4MjIxMjY0Njc1OVwiLFwiNVwiOlwiLTAuMDAzNDVcIixcIjZcIjpcIjAuMDAzNDVcIixcIjdcIjpcIjAuNDMzNzM0NzNcIixcIl9ybl9cIjpcIjNcIn0se1wiMVwiOlwiWFJQXCIsXCIyXCI6XCIxLjQzMDAwZSswMFwiLFwiM1wiOlwiOC44MTgyOTZlKzEwXCIsXCI0XCI6XCIyODI5MzYwMzA4XCIsXCI1XCI6XCIwLjkwODI1XCIsXCI2XCI6XCIwLjkwODI1XCIsXCI3XCI6XCIwLjAzMjA4NTExXCIsXCJfcm5fXCI6XCI0XCJ9LHtcIjFcIjpcIkJOQlwiLFwiMlwiOlwiNi41MDg1MGUrMDJcIixcIjNcIjpcIjguNzcwMTkwZSsxMFwiLFwiNFwiOlwiMTkyNzcxMDMyN1wiLFwiNVwiOlwiMi45NjU1MlwiLFwiNlwiOlwiMi45NjU1MlwiLFwiN1wiOlwiMC4wMjE5ODAyNlwiLFwiX3JuX1wiOlwiNVwifSx7XCIxXCI6XCJVU0RDXCIsXCIyXCI6XCI5Ljk5NzgyZS0wMVwiLFwiM1wiOlwiNy44MTYxMTJlKzEwXCIsXCI0XCI6XCIxNzE1MzY1NzIyMVwiLFwiNVwiOlwiLTAuMDAxMjVcIixcIjZcIjpcIjAuMDAxMjVcIixcIjdcIjpcIjAuMjE5NDY1MzRcIixcIl9ybl9cIjpcIjZcIn1dLFwib3B0aW9uc1wiOntcImNvbHVtbnNcIjp7XCJtaW5cIjp7fSxcIm1heFwiOlsxMF0sXCJ0b3RhbFwiOls3XX0sXCJyb3dzXCI6e1wibWluXCI6WzEwXSxcIm1heFwiOlsxMF0sXCJ0b3RhbFwiOls2XX0sXCJwYWdlc1wiOnt9fX1cbiAgPFwvc2NyaXB0PlxuPFwvZGl2PlxuXG48IS0tIHJuYi1mcmFtZS1lbmQgLS0+XG4ifQ== -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6Nywic3VtbWFyeSI6eyJEZXNjcmlwdGlvbiI6WyJkZiBbNiDDlyA3XSJdfX0sInJkZiI6Ikg0c0lBQUFBQUFBQUJzMVd6Mi9UTUJSMm1xYnB5b1ltY1lNck43VElQK0xZdnFFeU9DSTBObW0zS011eU5TSk5xelFGZHVQdjVrQngwcnpVQ1p2UUpnMVd5YzN6NSsrOTk4VjJubjF5Zk00bTV4T0VrSTJHam9Wc1I1dklPVHY5Y0NRUkdnNTB4MEpEdEtlZm95SlpyYk1Tb2NHTG1vNVE5UnczL2FGdWh3WWI5ZnJEc01qRHYzR3k1S3JzWlhYeWFKNnNHdUlRd0N5NlNETHdxaGhnbHpkTHNKMG9TNjl6YmZ5NlErTFdFYUdER3RzMmM5eU9aOFhkQ2dlYlJ4RjFFSytMSXNuTGNGbWtzYWx1MEZkM2VaSDFJS2RJcjJlUEsyOHlqNG92U1JuRzBkTFFaajhKYmZ2bG9veXk4T3NpVzNmV3RjLzdQK3BlMVFzYXhyTW92MDdDWlZMRWVwVWpiVkovWm9oMW5vVFl3NjFZUFpWUm1XWnBlV01vSEQwSmhTKzN5eHlXaTNDM0pjTkN5MTBZV3QxL3JkVnVhbUlkWmRRUTNHbGF4b3MwYjdyajkrVXNLWkwxSEFycmFWSUJJUEg4NUJPWTA0OVR5SGYyK2ZoZEwrd3o2UkZPT0U3ZVlCOGc2akdPWlFVeGdKU25sTlNzSTB3QUlwN1BNSzVZR0tEQTAzNTFMR282Q2tscngyN21mZUlGakxJcUFnSDZQdlVrQzJTTmtSMVBLdTRISFV4NmtraXFBbzNoSFNZRUpncWJtTkM4Z0JCYVk3MDM5N25DbVBzK0ZiSjljK0lMenZ4QStMeWRIMG9KRFRURUZaUXZxak96QURNTWZoT2lxQkFFTXlyYTJSR0VzNEFMN2QzTE96N0NIbEUrNDIyZmVKZ3doWTF4akZtcndNV2V3cEsyWGVxcGdIUGFZUk05M05zdTNTUnVONGQ3bnhUdTdSa21HcWFTVUV5NGdRZ3VLblNIK0l3SjVndG1jQmpWdTRRUU13NVJFdE5naDJqQUQvUks5SEphNEdTQk9Bc0NXN0I5TFpCakJiMFBjdnpBS0kwQmE5dmNRcm8zakRpTFZuRERhTSs1eTZpTXZLdWl2aUYwNkh2RjRwc0hsNUtxemd4KzZML05adlBUcUZhMmNVdlNHSHBlQlhqN0dzSFBxRStkMTdUaHk1KzMxY0tlUjk5QmFYM0FkZFA4RWZxdVZLTUhwNnJhcmE1dVhOWGdmQVdUcTJjR2JHZXBqN2JWUFh5citZYWh4VkpYOFh3RjJYOERPMU1GaXFRS0FBQT0ifQ== -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["current_price"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["market_cap"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["total_volume"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["price_change_percentage_24h"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["price_volatility"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["volume_to_market_cap_ratio"],"name":[7],"type":["dbl"],"align":["right"]}],"data":[{"1":"Bitcoin","2":"8.15150e+04","3":"1.632300e+12","4":"45900544278","5":"-0.19435","6":"0.19435","7":"0.02812015","_rn_":"1"},{"1":"Ethereum","2":"2.35080e+03","3":"2.836800e+11","4":"21475346745","5":"-1.01390","6":"1.01390","7":"0.07570281","_rn_":"2"},{"1":"Tether","2":"9.99850e-01","3":"1.895460e+11","4":"82212646759","5":"-0.00345","6":"0.00345","7":"0.43373473","_rn_":"3"},{"1":"XRP","2":"1.43000e+00","3":"8.818296e+10","4":"2829360308","5":"0.90825","6":"0.90825","7":"0.03208511","_rn_":"4"},{"1":"BNB","2":"6.50850e+02","3":"8.770190e+10","4":"1927710327","5":"2.96552","6":"2.96552","7":"0.02198026","_rn_":"5"},{"1":"USDC","2":"9.99782e-01","3":"7.816112e+10","4":"17153657221","5":"-0.00125","6":"0.00125","7":"0.21946534","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10],"total":[7]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHVibUZ0WlhNb1kzSjVjSFJ2WDJSaGRHRXBJQ05qYUdWamEzTWdkR2hsSUdOdmJIVnRiaUJ1WVcxbGN5QmNibUJnWUNKOSAtLT5cblxuYGBgclxubmFtZXMoY3J5cHRvX2RhdGEpICNjaGVja3MgdGhlIGNvbHVtbiBuYW1lcyBcbmBgYFxuXG48IS0tIHJuYi1zb3VyY2UtZW5kIC0tPlxuIn0= -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubmFtZXMoY3J5cHRvX2RhdGEpICNjaGVja3MgdGhlIGNvbHVtbiBuYW1lcyBcbmBgYCJ9 -->
-<pre class="r"><code>names(crypto_data) #checks the column names </code></pre>
+names(crypto_data) #checks the column names </code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibmFtZVwiICAgICAgICAgICAgICAgICAgICAgICAgXCJjdXJyZW50X3ByaWNlXCIgICAgICAgICAgICAgICBcIm1hcmtldF9jYXBcIiAgICAgICAgICAgICAgICAgIFwidG90YWxfdm9sdW1lXCIgICAgICAgICAgICAgICAgXCJwcmljZV9jaGFuZ2VfcGVyY2VudGFnZV8yNGhcIlxuWzZdIFwicHJpY2Vfdm9sYXRpbGl0eVwiICAgICAgICAgICAgXCJ2b2x1bWVfdG9fbWFya2V0X2NhcF9yYXRpb1wiIFxuIn0= -->
@@ -1798,15 +1784,15 @@ head(crypto_data) #views the first few rows </code></pre>
 <pre class="r"><code>str(crypto_data) #checks the structure of the data set</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiJ2RhdGEuZnJhbWUnOlx0NDkgb2JzLiBvZiAgNyB2YXJpYWJsZXM6XG4gJCBuYW1lICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCJCaXRjb2luXCIgXCJFdGhlcmV1bVwiIFwiVGV0aGVyXCIgXCJYUlBcIiAuLi5cbiAkIGN1cnJlbnRfcHJpY2UgICAgICAgICAgICAgIDogbnVtICA4MTUxNSAyMzUwLjggMSAxLjQzIDY1MC44NSAuLi5cbiAkIG1hcmtldF9jYXAgICAgICAgICAgICAgICAgIDogbnVtICAxLjYzZSsxMiAyLjg0ZSsxMSAxLjkwZSsxMSA4LjgyZSsxMCA4Ljc3ZSsxMCAuLi5cbiAkIHRvdGFsX3ZvbHVtZSAgICAgICAgICAgICAgIDogbnVtICA0LjU5ZSsxMCAyLjE1ZSsxMCA4LjIyZSsxMCAyLjgzZSswOSAxLjkzZSswOSAuLi5cbiAkIHByaWNlX2NoYW5nZV9wZXJjZW50YWdlXzI0aDogbnVtICAtMC4xOTQzNSAtMS4wMTM5IC0wLjAwMzQ1IDAuOTA4MjUgMi45NjU1MiAuLi5cbiAkIHByaWNlX3ZvbGF0aWxpdHkgICAgICAgICAgIDogbnVtICAwLjE5NDM1IDEuMDEzOSAwLjAwMzQ1IDAuOTA4MjUgMi45NjU1MiAuLi5cbiAkIHZvbHVtZV90b19tYXJrZXRfY2FwX3JhdGlvIDogbnVtICAwLjAyODEgMC4wNzU3IDAuNDMzNyAwLjAzMjEgMC4wMjIgLi4uXG4ifQ== -->
-<pre><code>&#39;data.frame&#39;:   49 obs. of  7 variables:
- $ name                       : chr  &quot;Bitcoin&quot; &quot;Ethereum&quot; &quot;Tether&quot; &quot;XRP&quot; ...
- $ current_price              : num  81515 2350.8 1 1.43 650.85 ...
- $ market_cap                 : num  1.63e+12 2.84e+11 1.90e+11 8.82e+10 8.77e+10 ...
- $ total_volume               : num  4.59e+10 2.15e+10 8.22e+10 2.83e+09 1.93e+09 ...
- $ price_change_percentage_24h: num  -0.19435 -1.0139 -0.00345 0.90825 2.96552 ...
- $ price_volatility           : num  0.19435 1.0139 0.00345 0.90825 2.96552 ...
- $ volume_to_market_cap_ratio : num  0.0281 0.0757 0.4337 0.0321 0.022 ...</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiJ2RhdGEuZnJhbWUnOlx0NTAgb2JzLiBvZiAgNyB2YXJpYWJsZXM6XG4gJCBuYW1lICAgICAgICAgICAgICAgICAgICAgICA6IGNociAgXCJCaXRjb2luXCIgXCJFdGhlcmV1bVwiIFwiVGV0aGVyXCIgXCJCTkJcIiAuLi5cbiAkIGN1cnJlbnRfcHJpY2UgICAgICAgICAgICAgIDogbnVtICA4MDY3MiAyMjgzLjk5IDEgNjY0LjY1IDEuNDQgLi4uXG4gJCBtYXJrZXRfY2FwICAgICAgICAgICAgICAgICA6IG51bSAgMS42MmUrMTIgMi43NmUrMTEgMS45MGUrMTEgOC45NmUrMTAgOC45MGUrMTAgLi4uXG4gJCB0b3RhbF92b2x1bWUgICAgICAgICAgICAgICA6IG51bSAgMy4zN2UrMTAgMS40NWUrMTAgNS44MGUrMTAgMS4xNGUrMDkgMi4xNmUrMDkgLi4uXG4gJCBwcmljZV9jaGFuZ2VfcGVyY2VudGFnZV8yNGg6IG51bSAgLTEuMzczNDggLTIuMjc2MzUgMC4wMDA3MiAwLjM1MjM2IC0yLjI2NDA0IC4uLlxuICQgcHJpY2Vfdm9sYXRpbGl0eSAgICAgICAgICAgOiBudW0gIDEuMzczNDggMi4yNzYzNSAwLjAwMDcyIDAuMzUyMzYgMi4yNjQwNCAuLi5cbiAkIHZvbHVtZV90b19tYXJrZXRfY2FwX3JhdGlvIDogbnVtICAwLjAyMDggMC4wNTI2IDAuMzA1NCAwLjAxMjcgMC4wMjQzIC4uLlxuIn0= -->
+<pre><code>&#39;data.frame&#39;:   50 obs. of  7 variables:
+ $ name                       : chr  &quot;Bitcoin&quot; &quot;Ethereum&quot; &quot;Tether&quot; &quot;BNB&quot; ...
+ $ current_price              : num  80672 2283.99 1 664.65 1.44 ...
+ $ market_cap                 : num  1.62e+12 2.76e+11 1.90e+11 8.96e+10 8.90e+10 ...
+ $ total_volume               : num  3.37e+10 1.45e+10 5.80e+10 1.14e+09 2.16e+09 ...
+ $ price_change_percentage_24h: num  -1.37348 -2.27635 0.00072 0.35236 -2.26404 ...
+ $ price_volatility           : num  1.37348 2.27635 0.00072 0.35236 2.26404 ...
+ $ volume_to_market_cap_ratio : num  0.0208 0.0526 0.3054 0.0127 0.0243 ...</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-chunk-begin -->
@@ -1829,14 +1815,34 @@ crypto_data$log_volume &lt;- log(crypto_data$total_volume)</code></pre>
 summary(model1) #prints results </code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxubG0oZm9ybXVsYSA9IHByaWNlX3ZvbGF0aWxpdHkgfiBsb2dfdm9sdW1lICsgbG9nX21hcmtldF9jYXAsIFxuICAgIGRhdGEgPSBjcnlwdG9fZGF0YSlcblxuUmVzaWR1YWxzOlxuICAgIE1pbiAgICAgIDFRICBNZWRpYW4gICAgICAzUSAgICAgTWF4IFxuLTIuODM0MCAtMS41ODgwICAwLjA2OTEgIDEuMDIwMiAgNi43NjE1IFxuXG5Db2VmZmljaWVudHM6XG4gICAgICAgICAgICAgICBFc3RpbWF0ZSBTdGQuIEVycm9yIHQgdmFsdWUgUHIoPnx0fCkgIFxuKEludGVyY2VwdCkgICAgICA4LjkzNjkgICAgIDQuNjk1NyAgIDEuOTAzICAgMC4wNjM0IC5cbmxvZ192b2x1bWUgICAgICAgMC4zNDMxICAgICAwLjIwMDUgICAxLjcxMiAgIDAuMDkzOSAuXG5sb2dfbWFya2V0X2NhcCAgLTAuNTkwMCAgICAgMC4yOTE2ICAtMi4wMjMgICAwLjA0OTAgKlxuLS0tXG5TaWduaWYuIGNvZGVzOiAgMCDigJgqKirigJkgMC4wMDEg4oCYKirigJkgMC4wMSDigJgq4oCZIDAuMDUg4oCYLuKAmSAwLjEg4oCYIOKAmSAxXG5cblJlc2lkdWFsIHN0YW5kYXJkIGVycm9yOiAyLjA1NyBvbiA0NSBkZWdyZWVzIG9mIGZyZWVkb21cbk11bHRpcGxlIFItc3F1YXJlZDogIDAuMDg1NzgsXHRBZGp1c3RlZCBSLXNxdWFyZWQ6ICAwLjA0NTE1IFxuRi1zdGF0aXN0aWM6IDIuMTExIG9uIDIgYW5kIDQ1IERGLCAgcC12YWx1ZTogMC4xMzI5XG4ifQ== -->
+<pre><code>
+Call:
+lm(formula = price_volatility ~ log_volume + log_market_cap, 
+    data = crypto_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.8340 -1.5880  0.0691  1.0202  6.7615 
+
+Coefficients:
+               Estimate Std. Error t value Pr(&gt;|t|)  
+(Intercept)      8.9369     4.6957   1.903   0.0634 .
+log_volume       0.3431     0.2005   1.712   0.0939 .
+log_market_cap  -0.5900     0.2916  -2.023   0.0490 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.057 on 45 degrees of freedom
+Multiple R-squared:  0.08578,   Adjusted R-squared:  0.04515 
+F-statistic: 2.111 on 2 and 45 DF,  p-value: 0.1329</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Regression 1 Interpretation:This regression shows that both trading
-volume and market cap are statistically significant. Higher trading
-volume it tied with higher price volatility, while higher market cap is
-tied with lower price volatility. The R-squared is 0.1499, which means
-that the model explains about 14.99% of the differences in
-cryptocurrency volatility.</p>
+<p>Regression 1 Interpretation: Market cap is significant and is linked
+to lower volatility. Trading volume is only weakly significant and
+linked to higher volatility. Therefore, the model explains about 8.58%
+of volatility.</p>
 </div>
 <div id="regression-2-filtered-data-set" class="section level3">
 <h3>Regression 2: Filtered Data Set</h3>
@@ -1850,15 +1856,32 @@ model2 &lt;- lm(price_volatility ~ log_volume + log_market_cap,data = filtered_d
 summary(model2) #prints results </code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxubG0oZm9ybXVsYSA9IHByaWNlX3ZvbGF0aWxpdHkgfiBsb2dfdm9sdW1lICsgbG9nX21hcmtldF9jYXAsIFxuICAgIGRhdGEgPSBmaWx0ZXJlZF9kYXRhKVxuXG5SZXNpZHVhbHM6XG4gICAgIE1pbiAgICAgICAxUSAgIE1lZGlhbiAgICAgICAzUSAgICAgIE1heCBcbi0xLjU5MjY3IC0xLjEyNjMxIC0wLjA1NzY5ICAxLjEyODMwICAxLjk0NDgxIFxuXG5Db2VmZmljaWVudHM6XG4gICAgICAgICAgICAgICBFc3RpbWF0ZSBTdGQuIEVycm9yIHQgdmFsdWUgUHIoPnx0fClcbihJbnRlcmNlcHQpICAgICAgMy40NjcyICAgICA3Ljg1OTQgICAwLjQ0MSAgICAwLjY2OFxubG9nX3ZvbHVtZSAgICAgICAwLjEzOTggICAgIDAuMzAyMSAgIDAuNDYzICAgIDAuNjUzXG5sb2dfbWFya2V0X2NhcCAgLTAuMjA1NiAgICAgMC41MDAzICAtMC40MTEgICAgMC42OTBcblxuUmVzaWR1YWwgc3RhbmRhcmQgZXJyb3I6IDEuNDA4IG9uIDEwIGRlZ3JlZXMgb2YgZnJlZWRvbVxuTXVsdGlwbGUgUi1zcXVhcmVkOiAgMC4wMjExNCxcdEFkanVzdGVkIFItc3F1YXJlZDogIC0wLjE3NDYgXG5GLXN0YXRpc3RpYzogMC4xMDggb24gMiBhbmQgMTAgREYsICBwLXZhbHVlOiAwLjg5ODdcbiJ9 -->
+<pre><code>
+Call:
+lm(formula = price_volatility ~ log_volume + log_market_cap, 
+    data = filtered_data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.59267 -1.12631 -0.05769  1.12830  1.94481 
+
+Coefficients:
+               Estimate Std. Error t value Pr(&gt;|t|)
+(Intercept)      3.4672     7.8594   0.441    0.668
+log_volume       0.1398     0.3021   0.463    0.653
+log_market_cap  -0.2056     0.5003  -0.411    0.690
+
+Residual standard error: 1.408 on 10 degrees of freedom
+Multiple R-squared:  0.02114,   Adjusted R-squared:  -0.1746 
+F-statistic: 0.108 on 2 and 10 DF,  p-value: 0.8987</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Regression 2 Interpretation: This filtered regression only looks at
-the cryptocurrencies with market caps that are above $10 billion. The
-results show that trading volume and market cap are not statistically
-significant, which means that they do not strongly explain price
-volatility for larger cryptocurrencies. The R-squared of of 0.028 is
-very low, which means that the model explains very little of the
-variation in volatility.</p>
+<p>Regression 2 Interpretation: For cryptocurrencies that are above $10
+billion in market cap, neither trading volume nor market cap is
+significant. Therefore, the model explains only about 2.1% of
+volatility.</p>
 </div>
 <div id="regression-3-regression-using-a-binary-variable" class="section level3">
 <h3>Regression 3: Regression using a Binary Variable</h3>
@@ -1872,7 +1895,7 @@ model3 &lt;- lm(price_volatility ~ log_volume + log_market_cap + volume_to_marke
 summary(model3)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxubG0oZm9ybXVsYSA9IHByaWNlX3ZvbGF0aWxpdHkgfiBsb2dfdm9sdW1lICsgbG9nX21hcmtldF9jYXAgKyBcbiAgICB2b2x1bWVfdG9fbWFya2V0X2NhcF9yYXRpbyArIGxhcmdlX2NyeXB0bywgZGF0YSA9IGNyeXB0b19kYXRhKVxuXG5SZXNpZHVhbHM6XG4gICAgTWluICAgICAgMVEgIE1lZGlhbiAgICAgIDNRICAgICBNYXggXG4tOC45MDg4IC0yLjEzNDAgLTEuMTA4MCAgMC45ODQyIDE4LjI5MzIgXG5cbkNvZWZmaWNpZW50czpcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIEVzdGltYXRlIFN0ZC4gRXJyb3IgdCB2YWx1ZSBQcig+fHR8KVxuKEludGVyY2VwdCkgICAgICAgICAgICAgICAgICAyLjU4NjYgICAgMTguNjg3MCAgIDAuMTM4ICAgIDAuODkxXG5sb2dfdm9sdW1lICAgICAgICAgICAgICAgICAgIDAuNDA3NCAgICAgMC42MDkzICAgMC42NjkgICAgMC41MDdcbmxvZ19tYXJrZXRfY2FwICAgICAgICAgICAgICAtMC4zNDkwICAgICAxLjAzODUgIC0wLjMzNiAgICAwLjczOFxudm9sdW1lX3RvX21hcmtldF9jYXBfcmF0aW8gIDE5LjQxNzAgICAgMTIuMzkwMiAgIDEuNTY3ICAgIDAuMTI0XG5sYXJnZV9jcnlwdG8gICAgICAgICAgICAgICAgLTMuMjcyNyAgICAgMi43NzMxICAtMS4xODAgICAgMC4yNDRcblxuUmVzaWR1YWwgc3RhbmRhcmQgZXJyb3I6IDQuOTc4IG9uIDQzIGRlZ3JlZXMgb2YgZnJlZWRvbVxuTXVsdGlwbGUgUi1zcXVhcmVkOiAgMC4yMjQxLFx0QWRqdXN0ZWQgUi1zcXVhcmVkOiAgMC4xNTE5IFxuRi1zdGF0aXN0aWM6IDMuMTA0IG9uIDQgYW5kIDQzIERGLCAgcC12YWx1ZTogMC4wMjQ4OVxuIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DYWxsOlxubG0oZm9ybXVsYSA9IHByaWNlX3ZvbGF0aWxpdHkgfiBsb2dfdm9sdW1lICsgbG9nX21hcmtldF9jYXAgKyBcbiAgICB2b2x1bWVfdG9fbWFya2V0X2NhcF9yYXRpbyArIGxhcmdlX2NyeXB0bywgZGF0YSA9IGNyeXB0b19kYXRhKVxuXG5SZXNpZHVhbHM6XG4gICAgTWluICAgICAgMVEgIE1lZGlhbiAgICAgIDNRICAgICBNYXggXG4tMi45NDE2IC0xLjgxNjkgLTAuMTM2MiAgMC45NDMxICA2Ljg1NzQgXG5cbkNvZWZmaWNpZW50czpcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIEVzdGltYXRlIFN0ZC4gRXJyb3IgdCB2YWx1ZSBQcig+fHR8KVxuKEludGVyY2VwdCkgICAgICAgICAgICAgICAgICAzLjcxNDggICAgIDcuODMwNCAgIDAuNDc0ICAgIDAuNjM4XG5sb2dfdm9sdW1lICAgICAgICAgICAgICAgICAgIDAuMzA4MCAgICAgMC4yNjMzICAgMS4xNzAgICAgMC4yNDlcbmxvZ19tYXJrZXRfY2FwICAgICAgICAgICAgICAtMC4zMjA5ICAgICAwLjQ0NzEgIC0wLjcxOCAgICAwLjQ3N1xudm9sdW1lX3RvX21hcmtldF9jYXBfcmF0aW8gICAwLjQxNTAgICAgIDMuNjYyNCAgIDAuMTEzICAgIDAuOTEwXG5sYXJnZV9jcnlwdG8gICAgICAgICAgICAgICAgLTAuOTU5NSAgICAgMS4xNTkxICAtMC44MjggICAgMC40MTJcblxuUmVzaWR1YWwgc3RhbmRhcmQgZXJyb3I6IDIuMDg3IG9uIDQzIGRlZ3JlZXMgb2YgZnJlZWRvbVxuTXVsdGlwbGUgUi1zcXVhcmVkOiAgMC4xMDA2LFx0QWRqdXN0ZWQgUi1zcXVhcmVkOiAgMC4wMTY5OCBcbkYtc3RhdGlzdGljOiAxLjIwMyBvbiA0IGFuZCA0MyBERiwgIHAtdmFsdWU6IDAuMzIzNFxuIn0= -->
 <pre><code>
 Call:
 lm(formula = price_volatility ~ log_volume + log_market_cap + 
@@ -1880,80 +1903,80 @@ lm(formula = price_volatility ~ log_volume + log_market_cap +
 
 Residuals:
     Min      1Q  Median      3Q     Max 
--8.9088 -2.1340 -1.1080  0.9842 18.2932 
+-2.9416 -1.8169 -0.1362  0.9431  6.8574 
 
 Coefficients:
                            Estimate Std. Error t value Pr(&gt;|t|)
-(Intercept)                  2.5866    18.6870   0.138    0.891
-log_volume                   0.4074     0.6093   0.669    0.507
-log_market_cap              -0.3490     1.0385  -0.336    0.738
-volume_to_market_cap_ratio  19.4170    12.3902   1.567    0.124
-large_crypto                -3.2727     2.7731  -1.180    0.244
+(Intercept)                  3.7148     7.8304   0.474    0.638
+log_volume                   0.3080     0.2633   1.170    0.249
+log_market_cap              -0.3209     0.4471  -0.718    0.477
+volume_to_market_cap_ratio   0.4150     3.6624   0.113    0.910
+large_crypto                -0.9595     1.1591  -0.828    0.412
 
-Residual standard error: 4.978 on 43 degrees of freedom
-Multiple R-squared:  0.2241,    Adjusted R-squared:  0.1519 
-F-statistic: 3.104 on 4 and 43 DF,  p-value: 0.02489</code></pre>
+Residual standard error: 2.087 on 43 degrees of freedom
+Multiple R-squared:  0.1006,    Adjusted R-squared:  0.01698 
+F-statistic: 1.203 on 4 and 43 DF,  p-value: 0.3234</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Regression 3 Interpretation: This regression is statistically
-significant overall and explains about 22.4% of volatility. However,
-none of the individual variables are significant. Therefore, the results
-do not clearly show that larger cryptocurrencies have lower
-volatility.</p>
+<p>Regression 3 Interpretation: The model adds trading volume, market
+cap, volume to market cap ratio, and a large crypto dummy. None of the
+variables are statistically significant. The model explains about 10.1%
+of volatility, and it does not strongly support that larger
+cryptocurrencies have lower volatility.</p>
 </div>
 <div id="creating-table-using-stargazer" class="section level3">
 <h3>Creating Table using Stargazer</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHVJMmx1YzNSaGJHeHpJSE4wWVhKbllYcGxjaUJwYm5SdklGSWdYRzVwYm5OMFlXeHNMbkJoWTJ0aFoyVnpLRndpYzNSaGNtZGhlbVZ5WENJcElGeHViR2xpY21GeWVTaHpkR0Z5WjJGNlpYSXBJRnh1WEc1emRHRnlaMkY2WlhJb2JXOWtaV3d4TENCdGIyUmxiRElzSUcxdlpHVnNNeXdnSTNWelpYTWdkR2hsSUcxdlpHVnNjeUJ1WldWa1pXUWdabTl5SUhSb1pTQjBZV0pzWlNCY2JpQWdJQ0FnSUNBZ0lDQjBlWEJsSUQwZ1hDSjBaWGgwWENJc1hHNGdJQ0FnSUNBZ0lDQWdkR2wwYkdVZ1BTQmNJa055ZVhCMGIyTjFjbkpsYm1ONUlGSmxaM0psYzNOcGIyNGdVbVZ6ZFd4MGMxd2lMQ0FqWVdSa2N5QjBhR1VnZEdsMGJHVWdkRzhnZEdobElIUmhZbXhsSUZ4dUlDQWdJQ0FnSUNBZ0lHUmxjQzUyWVhJdWJHRmlaV3h6TG1sdVkyeDFaR1VnUFNCR1FVeFRSU3dnSTNKbGJXOTJaWE1nWkdWd1pXNWtaVzUwSUhaaGNtbGhZbXhsSUd4aFltVnNJRnh1SUNBZ0lDQWdJQ0FnSUdOdmJIVnRiaTVzWVdKbGJITWdQU0JqS0Z3aVVtVnpaV0Z5WTJnZ1RXOWtaV3hjSWl3Z1hDSkdhV3gwWlhKbFpDQk5iMlJsYkZ3aUxDQmNJbEJ5WldabGNuSmxaQ0JOYjJSbGJGd2lLU3dnSTJGa1pITWdiR0ZpWld4eklIUnZJR1ZoWTJnZ1kyOXNkVzF1SUhSdklIUm9aU0JqYjNKeVpYTndiMjVrYVc1bklHMXZaR1ZzSUZ4dUlDQWdJQ0FnSUNBZ0lHTnZkbUZ5YVdGMFpTNXNZV0psYkhNZ1BTQmpLRndpVEc5bklGUnlZV1JwYm1jZ1ZtOXNkVzFsWENJc1hDSk1iMmNnVFdGeWEyVjBJRU5oY0Z3aUxGd2lWbTlzZFcxbExYUnZMVTFoY210bGRDMURZWEFnVW1GMGFXOWNJaXhjSWt4aGNtZGxJRU55ZVhCMGJ5QkVkVzF0ZVZ3aUtTd2dJMkZrWkhNZ2RtRnlhV0ZpYkdVZ2JHRmlaV3h6SUhSdklIUm9aU0IwWVdKc1pTQmNiaUFnSUNBZ0lDQWdJQ0JrYVdkcGRITWdQU0F6TENBamNtOTFibVJ6SUhSb1pTQnVkVzFpWlhKeklIUnZJSFJvY21WbElHUmxZMmx0WVd3Z2NHeGhZMlZ6SUZ4dUlDQWdJQ0FnSUNBZ0lHOTFkQ0E5SUZ3aVkzSjVjSFJ2WDNKbFozSmxjM05wYjI1ZmNtVnpkV3gwY3k1MGVIUmNJaWtnSTNOaGRtVnpJSFJvWlNCMFlXSnNaU0JwYm5SdklHTnZiWEIxZEdWeUlGeHVZR0JnSW4wPSAtLT5cblxuYGBgclxuI2luc3RhbGxzIHN0YXJnYXplciBpbnRvIFIgXG5pbnN0YWxsLnBhY2thZ2VzKFwic3RhcmdhemVyXCIpIFxubGlicmFyeShzdGFyZ2F6ZXIpIFxuXG5zdGFyZ2F6ZXIobW9kZWwxLCBtb2RlbDIsIG1vZGVsMywgI3VzZXMgdGhlIG1vZGVscyBuZWVkZWQgZm9yIHRoZSB0YWJsZSBcbiAgICAgICAgICB0eXBlID0gXCJ0ZXh0XCIsXG4gICAgICAgICAgdGl0bGUgPSBcIkNyeXB0b2N1cnJlbmN5IFJlZ3Jlc3Npb24gUmVzdWx0c1wiLCAjYWRkcyB0aGUgdGl0bGUgdG8gdGhlIHRhYmxlIFxuICAgICAgICAgIGRlcC52YXIubGFiZWxzLmluY2x1ZGUgPSBGQUxTRSwgI3JlbW92ZXMgZGVwZW5kZW50IHZhcmlhYmxlIGxhYmVsIFxuICAgICAgICAgIGNvbHVtbi5sYWJlbHMgPSBjKFwiUmVzZWFyY2ggTW9kZWxcIiwgXCJGaWx0ZXJlZCBNb2RlbFwiLCBcIlByZWZlcnJlZCBNb2RlbFwiKSwgI2FkZHMgbGFiZWxzIHRvIGVhY2ggY29sdW1uIHRvIHRoZSBjb3JyZXNwb25kaW5nIG1vZGVsIFxuICAgICAgICAgIGNvdmFyaWF0ZS5sYWJlbHMgPSBjKFwiTG9nIFRyYWRpbmcgVm9sdW1lXCIsXCJMb2cgTWFya2V0IENhcFwiLFwiVm9sdW1lLXRvLU1hcmtldC1DYXAgUmF0aW9cIixcIkxhcmdlIENyeXB0byBEdW1teVwiKSwgI2FkZHMgdmFyaWFibGUgbGFiZWxzIHRvIHRoZSB0YWJsZSBcbiAgICAgICAgICBkaWdpdHMgPSAzLCAjcm91bmRzIHRoZSBudW1iZXJzIHRvIHRocmVlIGRlY2ltYWwgcGxhY2VzIFxuICAgICAgICAgIG91dCA9IFwiY3J5cHRvX3JlZ3Jlc3Npb25fcmVzdWx0cy50eHRcIikgI3NhdmVzIHRoZSB0YWJsZSBpbnRvIGNvbXB1dGVyIFxuYGBgXG5cbjwhLS0gcm5iLXNvdXJjZS1lbmQgLS0+XG4ifQ== -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2luc3RhbGxzIHN0YXJnYXplciBpbnRvIFIgXG5pbnN0YWxsLnBhY2thZ2VzKFwic3RhcmdhemVyXCIpIFxubGlicmFyeShzdGFyZ2F6ZXIpIFxuXG5zdGFyZ2F6ZXIobW9kZWwxLCBtb2RlbDIsIG1vZGVsMywgI3VzZXMgdGhlIG1vZGVscyBuZWVkZWQgZm9yIHRoZSB0YWJsZSBcbiAgICAgICAgICB0eXBlID0gXCJ0ZXh0XCIsXG4gICAgICAgICAgdGl0bGUgPSBcIkNyeXB0b2N1cnJlbmN5IFJlZ3Jlc3Npb24gUmVzdWx0c1wiLCAjYWRkcyB0aGUgdGl0bGUgdG8gdGhlIHRhYmxlIFxuICAgICAgICAgIGRlcC52YXIubGFiZWxzLmluY2x1ZGUgPSBGQUxTRSwgI3JlbW92ZXMgZGVwZW5kZW50IHZhcmlhYmxlIGxhYmVsIFxuICAgICAgICAgIGNvbHVtbi5sYWJlbHMgPSBjKFwiUmVzZWFyY2ggTW9kZWxcIiwgXCJGaWx0ZXJlZCBNb2RlbFwiLCBcIlByZWZlcnJlZCBNb2RlbFwiKSwgI2FkZHMgbGFiZWxzIHRvIGVhY2ggY29sdW1uIHRvIHRoZSBjb3JyZXNwb25kaW5nIG1vZGVsIFxuICAgICAgICAgIGNvdmFyaWF0ZS5sYWJlbHMgPSBjKFwiTG9nIFRyYWRpbmcgVm9sdW1lXCIsXCJMb2cgTWFya2V0IENhcFwiLFwiVm9sdW1lLXRvLU1hcmtldC1DYXAgUmF0aW9cIixcIkxhcmdlIENyeXB0byBEdW1teVwiKSwgI2FkZHMgdmFyaWFibGUgbGFiZWxzIHRvIHRoZSB0YWJsZSBcbiAgICAgICAgICBkaWdpdHMgPSAzLCAjcm91bmRzIHRoZSBudW1iZXJzIHRvIHRocmVlIGRlY2ltYWwgcGxhY2VzIFxuICAgICAgICAgIG91dCA9IFwiY3J5cHRvX3JlZ3Jlc3Npb25fcmVzdWx0cy50eHRcIikgI3NhdmVzIHRoZSB0YWJsZSBpbnRvIGNvbXB1dGVyIFxuYGBgIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG48IS0tIHJuYi1zb3VyY2UtYmVnaW4gZXlKa1lYUmhJam9pWUdCZ2NseHVJMmx1YzNSaGJHeHpJSE4wWVhKbllYcGxjaUJwYm5SdklGSWdYRzRqYVc1emRHRnNiQzV3WVdOcllXZGxjeWhjSW5OMFlYSm5ZWHBsY2x3aUtTQmNibXhwWW5KaGNua29jM1JoY21kaGVtVnlLU0JjYmx4dWMzUmhjbWRoZW1WeUtHMXZaR1ZzTVN3Z2JXOWtaV3d5TENCdGIyUmxiRE1zSUNOMWMyVnpJSFJvWlNCdGIyUmxiSE1nYm1WbFpHVmtJR1p2Y2lCMGFHVWdkR0ZpYkdVZ1hHNGdJQ0FnSUNBZ0lDQWdkSGx3WlNBOUlGd2lkR1Y0ZEZ3aUxGeHVJQ0FnSUNBZ0lDQWdJSFJwZEd4bElEMGdYQ0pEY25sd2RHOWpkWEp5Wlc1amVTQlNaV2R5WlhOemFXOXVJRkpsYzNWc2RITmNJaXdnSTJGa1pITWdkR2hsSUhScGRHeGxJSFJ2SUhSb1pTQjBZV0pzWlNCY2JpQWdJQ0FnSUNBZ0lDQmpiMngxYlc0dWJHRmlaV3h6SUQwZ1l5aGNJbEpsYzJWaGNtTm9JRTF2WkdWc1hDSXNJRndpUm1sc2RHVnlaV1FnVFc5a1pXeGNJaXdnWENKUWNtVm1aWEp5WldRZ1RXOWtaV3hjSWlrc0lDTmhaR1J6SUd4aFltVnNjeUIwYnlCbFlXTm9JR052YkhWdGJpQjBieUIwYUdVZ1kyOXljbVZ6Y0c5dVpHbHVaeUJ0YjJSbGJDQmNiaUFnSUNBZ0lDQWdJQ0JqYjNaaGNtbGhkR1V1YkdGaVpXeHpJRDBnWXloY0lreHZaeUJVY21Ga2FXNW5JRlp2YkhWdFpWd2lMRndpVEc5bklFMWhjbXRsZENCRFlYQmNJaXhjSWxadmJIVnRaUzEwYnkxTllYSnJaWFF0UTJGd0lGSmhkR2x2WENJc1hDSk1ZWEpuWlNCRGNubHdkRzhnUkhWdGJYbGNJaWtzSUNOaFpHUnpJSFpoY21saFlteGxJR3hoWW1Wc2N5QjBieUIwYUdVZ2RHRmliR1VnWEc0Z0lDQWdJQ0FnSUNBZ1pHbG5hWFJ6SUQwZ015d2dJM0p2ZFc1a2N5QjBhR1VnYm5WdFltVnljeUIwYnlCMGFISmxaU0JrWldOcGJXRnNJSEJzWVdObGN5QmNiaUFnSUNBZ0lDQWdJQ0J2ZFhRZ1BTQmNJbU55ZVhCMGIxOXlaV2R5WlhOemFXOXVYM0psYzNWc2RITXVhSFJ0YkZ3aUtTQWpjMkYyWlhNZ2RHaGxJSFJoWW14bElHbHVkRzhnWTI5dGNIVjBaWElnWEc1Z1lHQWlmUT09IC0tPlxuXG5gYGByXG4jaW5zdGFsbHMgc3RhcmdhemVyIGludG8gUiBcbiNpbnN0YWxsLnBhY2thZ2VzKFwic3RhcmdhemVyXCIpIFxubGlicmFyeShzdGFyZ2F6ZXIpIFxuXG5zdGFyZ2F6ZXIobW9kZWwxLCBtb2RlbDIsIG1vZGVsMywgI3VzZXMgdGhlIG1vZGVscyBuZWVkZWQgZm9yIHRoZSB0YWJsZSBcbiAgICAgICAgICB0eXBlID0gXCJ0ZXh0XCIsXG4gICAgICAgICAgdGl0bGUgPSBcIkNyeXB0b2N1cnJlbmN5IFJlZ3Jlc3Npb24gUmVzdWx0c1wiLCAjYWRkcyB0aGUgdGl0bGUgdG8gdGhlIHRhYmxlIFxuICAgICAgICAgIGNvbHVtbi5sYWJlbHMgPSBjKFwiUmVzZWFyY2ggTW9kZWxcIiwgXCJGaWx0ZXJlZCBNb2RlbFwiLCBcIlByZWZlcnJlZCBNb2RlbFwiKSwgI2FkZHMgbGFiZWxzIHRvIGVhY2ggY29sdW1uIHRvIHRoZSBjb3JyZXNwb25kaW5nIG1vZGVsIFxuICAgICAgICAgIGNvdmFyaWF0ZS5sYWJlbHMgPSBjKFwiTG9nIFRyYWRpbmcgVm9sdW1lXCIsXCJMb2cgTWFya2V0IENhcFwiLFwiVm9sdW1lLXRvLU1hcmtldC1DYXAgUmF0aW9cIixcIkxhcmdlIENyeXB0byBEdW1teVwiKSwgI2FkZHMgdmFyaWFibGUgbGFiZWxzIHRvIHRoZSB0YWJsZSBcbiAgICAgICAgICBkaWdpdHMgPSAzLCAjcm91bmRzIHRoZSBudW1iZXJzIHRvIHRocmVlIGRlY2ltYWwgcGxhY2VzIFxuICAgICAgICAgIG91dCA9IFwiY3J5cHRvX3JlZ3Jlc3Npb25fcmVzdWx0cy5odG1sXCIpICNzYXZlcyB0aGUgdGFibGUgaW50byBjb21wdXRlciBcbmBgYFxuXG48IS0tIHJuYi1zb3VyY2UtZW5kIC0tPlxuIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2luc3RhbGxzIHN0YXJnYXplciBpbnRvIFIgXG4jaW5zdGFsbC5wYWNrYWdlcyhcInN0YXJnYXplclwiKSBcbmxpYnJhcnkoc3RhcmdhemVyKSBcblxuc3RhcmdhemVyKG1vZGVsMSwgbW9kZWwyLCBtb2RlbDMsICN1c2VzIHRoZSBtb2RlbHMgbmVlZGVkIGZvciB0aGUgdGFibGUgXG4gICAgICAgICAgdHlwZSA9IFwidGV4dFwiLFxuICAgICAgICAgIHRpdGxlID0gXCJDcnlwdG9jdXJyZW5jeSBSZWdyZXNzaW9uIFJlc3VsdHNcIiwgI2FkZHMgdGhlIHRpdGxlIHRvIHRoZSB0YWJsZSBcbiAgICAgICAgICBjb2x1bW4ubGFiZWxzID0gYyhcIlJlc2VhcmNoIE1vZGVsXCIsIFwiRmlsdGVyZWQgTW9kZWxcIiwgXCJQcmVmZXJyZWQgTW9kZWxcIiksICNhZGRzIGxhYmVscyB0byBlYWNoIGNvbHVtbiB0byB0aGUgY29ycmVzcG9uZGluZyBtb2RlbCBcbiAgICAgICAgICBjb3ZhcmlhdGUubGFiZWxzID0gYyhcIkxvZyBUcmFkaW5nIFZvbHVtZVwiLFwiTG9nIE1hcmtldCBDYXBcIixcIlZvbHVtZS10by1NYXJrZXQtQ2FwIFJhdGlvXCIsXCJMYXJnZSBDcnlwdG8gRHVtbXlcIiksICNhZGRzIHZhcmlhYmxlIGxhYmVscyB0byB0aGUgdGFibGUgXG4gICAgICAgICAgZGlnaXRzID0gMywgI3JvdW5kcyB0aGUgbnVtYmVycyB0byB0aHJlZSBkZWNpbWFsIHBsYWNlcyBcbiAgICAgICAgICBvdXQgPSBcImNyeXB0b19yZWdyZXNzaW9uX3Jlc3VsdHMuaHRtbFwiKSAjc2F2ZXMgdGhlIHRhYmxlIGludG8gY29tcHV0ZXIgXG5gYGAifQ== -->
 <pre class="r"><code>#installs stargazer into R 
-install.packages(&quot;stargazer&quot;) 
+#install.packages(&quot;stargazer&quot;) 
 library(stargazer) 
 
 stargazer(model1, model2, model3, #uses the models needed for the table 
           type = &quot;text&quot;,
           title = &quot;Cryptocurrency Regression Results&quot;, #adds the title to the table 
-          dep.var.labels.include = FALSE, #removes dependent variable label 
           column.labels = c(&quot;Research Model&quot;, &quot;Filtered Model&quot;, &quot;Preferred Model&quot;), #adds labels to each column to the corresponding model 
           covariate.labels = c(&quot;Log Trading Volume&quot;,&quot;Log Market Cap&quot;,&quot;Volume-to-Market-Cap Ratio&quot;,&quot;Large Crypto Dummy&quot;), #adds variable labels to the table 
           digits = 3, #rounds the numbers to three decimal places 
-          out = &quot;crypto_regression_results.txt&quot;) #saves the table into computer </code></pre>
+          out = &quot;crypto_regression_results.html&quot;) #saves the table into computer </code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5DcnlwdG9jdXJyZW5jeSBSZWdyZXNzaW9uIFJlc3VsdHNcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBEZXBlbmRlbnQgdmFyaWFibGU6ICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFJlc2VhcmNoIE1vZGVsICAgICAgRmlsdGVyZWQgTW9kZWwgICAgIFByZWZlcnJlZCBNb2RlbCAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAoMSkgICAgICAgICAgICAgICAgICgyKSAgICAgICAgICAgICAgICAgKDMpICAgICAgICAgXG4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbkxvZyBUcmFkaW5nIFZvbHVtZSAgICAgICAgICAgICAgIDEuMTQ3KiogICAgICAgICAgICAgIC0wLjAwOSAgICAgICAgICAgICAgMC40MDcgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKDAuNDI4KSAgICAgICAgICAgICAoMC4yMjUpICAgICAgICAgICAgICgwLjYwOSkgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbkxvZyBNYXJrZXQgQ2FwICAgICAgICAgICAgICAgICAgIC0xLjc2MSoqICAgICAgICAgICAgIC0wLjEwNyAgICAgICAgICAgICAgLTAuMzQ5ICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKDAuNzAxKSAgICAgICAgICAgICAoMC4zOTcpICAgICAgICAgICAgICgxLjAzOCkgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcblZvbHVtZS10by1NYXJrZXQtQ2FwIFJhdGlvICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMTkuNDE3ICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICgxMi4zOTApICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbkxhcmdlIENyeXB0byBEdW1teSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLTMuMjczICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICgyLjc3MykgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbkNvbnN0YW50ICAgICAgICAgICAgICAgICAgICAgICAgIDIxLjAzNCogICAgICAgICAgICAgIDMuODU5ICAgICAgICAgICAgICAgMi41ODcgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKDExLjcwMikgICAgICAgICAgICAoNi40NDMpICAgICAgICAgICAgICgxOC42ODcpICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuT2JzZXJ2YXRpb25zICAgICAgICAgICAgICAgICAgICAgICAgNDggICAgICAgICAgICAgICAgICAxMyAgICAgICAgICAgICAgICAgIDQ4ICAgICAgICAgXG5SMiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMC4xNTAgICAgICAgICAgICAgICAwLjAyOCAgICAgICAgICAgICAgIDAuMjI0ICAgICAgICBcbkFkanVzdGVkIFIyICAgICAgICAgICAgICAgICAgICAgICAwLjExMiAgICAgICAgICAgICAgIC0wLjE2NiAgICAgICAgICAgICAgMC4xNTIgICAgICAgIFxuUmVzaWR1YWwgU3RkLiBFcnJvciAgICAgICAgICA1LjA5MyAoZGYgPSA0NSkgICAgIDEuMTQ5IChkZiA9IDEwKSAgICAgNC45NzggKGRmID0gNDMpICAgXG5GIFN0YXRpc3RpYyAgICAgICAgICAgICAgICAzLjk2OCoqIChkZiA9IDI7IDQ1KSAwLjE0NCAoZGYgPSAyOyAxMCkgMy4xMDQqKiAoZGYgPSA0OyA0Mylcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuTm90ZTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKnA8MC4xOyAqKnA8MC4wNTsgKioqcDwwLjAxXG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5DcnlwdG9jdXJyZW5jeSBSZWdyZXNzaW9uIFJlc3VsdHNcbj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBEZXBlbmRlbnQgdmFyaWFibGU6ICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJpY2Vfdm9sYXRpbGl0eSAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgIFJlc2VhcmNoIE1vZGVsICAgICBGaWx0ZXJlZCBNb2RlbCAgICBQcmVmZXJyZWQgTW9kZWwgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICgxKSAgICAgICAgICAgICAgICAoMikgICAgICAgICAgICAgICAgKDMpICAgICAgICBcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG5Mb2cgVHJhZGluZyBWb2x1bWUgICAgICAgICAgICAgICAwLjM0MyogICAgICAgICAgICAgMC4xNDAgICAgICAgICAgICAgIDAuMzA4ICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAoMC4yMDApICAgICAgICAgICAgKDAuMzAyKSAgICAgICAgICAgICgwLjI2MykgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5Mb2cgTWFya2V0IENhcCAgICAgICAgICAgICAgICAgIC0wLjU5MCoqICAgICAgICAgICAgLTAuMjA2ICAgICAgICAgICAgIC0wLjMyMSAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAoMC4yOTIpICAgICAgICAgICAgKDAuNTAwKSAgICAgICAgICAgICgwLjQ0NykgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5Wb2x1bWUtdG8tTWFya2V0LUNhcCBSYXRpbyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuNDE1ICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICgzLjY2MikgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5MYXJnZSBDcnlwdG8gRHVtbXkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC0wLjk2MCAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICgxLjE1OSkgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG5Db25zdGFudCAgICAgICAgICAgICAgICAgICAgICAgICA4LjkzNyogICAgICAgICAgICAgMy40NjcgICAgICAgICAgICAgIDMuNzE1ICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAoNC42OTYpICAgICAgICAgICAgKDcuODU5KSAgICAgICAgICAgICg3LjgzMCkgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuT2JzZXJ2YXRpb25zICAgICAgICAgICAgICAgICAgICAgICA0OCAgICAgICAgICAgICAgICAgMTMgICAgICAgICAgICAgICAgIDQ4ICAgICAgICBcblIyICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMDg2ICAgICAgICAgICAgICAwLjAyMSAgICAgICAgICAgICAgMC4xMDEgICAgICAgXG5BZGp1c3RlZCBSMiAgICAgICAgICAgICAgICAgICAgICAwLjA0NSAgICAgICAgICAgICAgLTAuMTc1ICAgICAgICAgICAgIDAuMDE3ICAgICAgIFxuUmVzaWR1YWwgU3RkLiBFcnJvciAgICAgICAgIDIuMDU3IChkZiA9IDQ1KSAgICAxLjQwOCAoZGYgPSAxMCkgICAgMi4wODcgKGRmID0gNDMpICBcbkYgU3RhdGlzdGljICAgICAgICAgICAgICAgIDIuMTExIChkZiA9IDI7IDQ1KSAwLjEwOCAoZGYgPSAyOyAxMCkgMS4yMDMgKGRmID0gNDsgNDMpXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuTm90ZTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAqcDwwLjE7ICoqcDwwLjA1OyAqKipwPDAuMDFcbiJ9 -->
 <pre><code>
 Cryptocurrency Regression Results
-=======================================================================================
-                                               Dependent variable:                     
-                           ------------------------------------------------------------
-                              Research Model      Filtered Model     Preferred Model   
-                                   (1)                 (2)                 (3)         
----------------------------------------------------------------------------------------
-Log Trading Volume               1.147**              -0.009              0.407        
-                                 (0.428)             (0.225)             (0.609)       
-                                                                                       
-Log Market Cap                   -1.761**             -0.107              -0.349       
-                                 (0.701)             (0.397)             (1.038)       
-                                                                                       
-Volume-to-Market-Cap Ratio                                                19.417       
-                                                                         (12.390)      
-                                                                                       
-Large Crypto Dummy                                                        -3.273       
-                                                                         (2.773)       
-                                                                                       
-Constant                         21.034*              3.859               2.587        
-                                 (11.702)            (6.443)             (18.687)      
-                                                                                       
----------------------------------------------------------------------------------------
-Observations                        48                  13                  48         
-R2                                0.150               0.028               0.224        
-Adjusted R2                       0.112               -0.166              0.152        
-Residual Std. Error          5.093 (df = 45)     1.149 (df = 10)     4.978 (df = 43)   
-F Statistic                3.968** (df = 2; 45) 0.144 (df = 2; 10) 3.104** (df = 4; 43)
-=======================================================================================
-Note:                                                       *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+===================================================================================
+                                             Dependent variable:                   
+                           --------------------------------------------------------
+                                               price_volatility                    
+                             Research Model     Filtered Model    Preferred Model  
+                                  (1)                (2)                (3)        
+-----------------------------------------------------------------------------------
+Log Trading Volume               0.343*             0.140              0.308       
+                                (0.200)            (0.302)            (0.263)      
+                                                                                   
+Log Market Cap                  -0.590**            -0.206             -0.321      
+                                (0.292)            (0.500)            (0.447)      
+                                                                                   
+Volume-to-Market-Cap Ratio                                             0.415       
+                                                                      (3.662)      
+                                                                                   
+Large Crypto Dummy                                                     -0.960      
+                                                                      (1.159)      
+                                                                                   
+Constant                         8.937*             3.467              3.715       
+                                (4.696)            (7.859)            (7.830)      
+                                                                                   
+-----------------------------------------------------------------------------------
+Observations                       48                 13                 48        
+R2                               0.086              0.021              0.101       
+Adjusted R2                      0.045              -0.175             0.017       
+Residual Std. Error         2.057 (df = 45)    1.408 (df = 10)    2.087 (df = 43)  
+F Statistic                2.111 (df = 2; 45) 0.108 (df = 2; 10) 1.203 (df = 4; 43)
+===================================================================================
+Note:                                                   *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -1961,7 +1984,7 @@ Note:                                                       *p&lt;0.1; **p&lt;0.
 </div>
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkRhdGEgQW5hbHlzaXMgUmVncmVzc2lvbiBNb2RlbHMiDQpvdXRwdXQ6DQogIHBkZl9kb2N1bWVudDogZGVmYXVsdA0KICBodG1sX25vdGVib29rOiBkZWZhdWx0DQotLS0NCiMjIFRoaXMgbm90ZWJvb2sgaW1wb3J0cyBteSBjcnlwdG9jdXJyZW5jeSBkYXRhIHNldCBhbmQgcnVucyBtdWx0aXBsZSByZWdyZXNzaW9ucyANCg0KIyMjIFNvdXJjZXM6IA0KMS4gTGVjdHVyZSAxMCBOb3RlcyANCjIuIExlY3R1cmUgMTEgTm90ZXMNCjMuIGh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9eGNaaWIzcUFjMzAgKFlvdVR1YmUpDQo0LiBodHRwczovL3d3dy5jb2RlY2FkZW15LmNvbS9sZWFybi9sZWFybi1saW5lYXItcmVncmVzc2lvbi1pbi1yL21vZHVsZXMvbGluZWFyLXJlZ3Jlc3Npb24taW4tci9jaGVhdHNoZWV0DQoNCiMjIyBQcmVwYXJpbmcgRGF0YSBmb3IgUmVncmVzc2lvbnMgDQpgYGB7cn0NCmNyeXB0b19kYXRhIDwtIHJlYWQuY3N2KCJDOi9Vc2Vycy9sYXVyYS9jcnlwdG9fZGF0YS5jc3YiKSAjaW1wb3J0cyB0aGUgY3J5cHRvIGRhdGEgc2V0DQpoZWFkKGNyeXB0b19kYXRhKSAjdmlld3MgdGhlIGZpcnN0IGZldyByb3dzIA0KbmFtZXMoY3J5cHRvX2RhdGEpICNjaGVja3MgdGhlIGNvbHVtbiBuYW1lcyANCnN0cihjcnlwdG9fZGF0YSkgI2NoZWNrcyB0aGUgc3RydWN0dXJlIG9mIHRoZSBkYXRhIHNldA0KYGBgDQpgYGB7cn0NCmNyeXB0b19kYXRhJGxvZ19tYXJrZXRfY2FwIDwtIGxvZyhjcnlwdG9fZGF0YSRtYXJrZXRfY2FwKSANCmNyeXB0b19kYXRhJGxvZ192b2x1bWUgPC0gbG9nKGNyeXB0b19kYXRhJHRvdGFsX3ZvbHVtZSkNCmBgYA0KDQojIyMgUmVncmVzc2lvbiAxOiBGdWxsIERhdGEgU2V0IE9MUw0KYGBge3J9DQptb2RlbDEgPC0gbG0ocHJpY2Vfdm9sYXRpbGl0eSB+IGxvZ192b2x1bWUgKyBsb2dfbWFya2V0X2NhcCwgZGF0YSA9IGNyeXB0b19kYXRhKSNydW5zIHJlZ3Jlc3Npb24gdXNpbmcgdm9sdW1lIGFuZCBtYXJrZXQgY2FwIHRvIGV4cGxhaW4gcHJpY2Ugdm9sYXRpbGl0eSANCnN1bW1hcnkobW9kZWwxKSAjcHJpbnRzIHJlc3VsdHMgDQpgYGANClJlZ3Jlc3Npb24gMSBJbnRlcnByZXRhdGlvbjpUaGlzIHJlZ3Jlc3Npb24gc2hvd3MgdGhhdCBib3RoIHRyYWRpbmcgdm9sdW1lIGFuZCBtYXJrZXQgY2FwIGFyZSBzdGF0aXN0aWNhbGx5IHNpZ25pZmljYW50LiBIaWdoZXIgdHJhZGluZyB2b2x1bWUgaXQgdGllZCB3aXRoIGhpZ2hlciBwcmljZSB2b2xhdGlsaXR5LCB3aGlsZSBoaWdoZXIgbWFya2V0IGNhcCBpcyB0aWVkIHdpdGggbG93ZXIgcHJpY2Ugdm9sYXRpbGl0eS4gVGhlIFItc3F1YXJlZCBpcyAwLjE0OTksIHdoaWNoIG1lYW5zIHRoYXQgdGhlIG1vZGVsIGV4cGxhaW5zIGFib3V0IDE0Ljk5JSBvZiB0aGUgZGlmZmVyZW5jZXMgaW4gY3J5cHRvY3VycmVuY3kgdm9sYXRpbGl0eS4gDQoNCiMjIyBSZWdyZXNzaW9uIDI6IEZpbHRlcmVkIERhdGEgU2V0DQpgYGB7cn0NCmZpbHRlcmVkX2RhdGEgPC0gc3Vic2V0KGNyeXB0b19kYXRhLCBtYXJrZXRfY2FwID4gMTAwMDAwMDAwMDApICNmaWx0ZXJzIGRhdGEgc2V0DQptb2RlbDIgPC0gbG0ocHJpY2Vfdm9sYXRpbGl0eSB+IGxvZ192b2x1bWUgKyBsb2dfbWFya2V0X2NhcCxkYXRhID0gZmlsdGVyZWRfZGF0YSkgI3J1bnMgcmVncmVzc2lvbiBvbiB0aGUgZmlsdGVyZWQgZGF0YSB0byBzZWUgaG93IHRoZSB2b2x1bWUgYW5kIG1hcmtldCBjYXAgZXhwbGFpbiBwcmljZSB2b2xhdGlsaXR5IA0KDQpzdW1tYXJ5KG1vZGVsMikgI3ByaW50cyByZXN1bHRzIA0KYGBgDQpSZWdyZXNzaW9uIDIgSW50ZXJwcmV0YXRpb246IFRoaXMgZmlsdGVyZWQgcmVncmVzc2lvbiBvbmx5IGxvb2tzIGF0IHRoZSBjcnlwdG9jdXJyZW5jaWVzIHdpdGggbWFya2V0IGNhcHMgdGhhdCBhcmUgYWJvdmUgJDEwIGJpbGxpb24uIFRoZSByZXN1bHRzIHNob3cgdGhhdCB0cmFkaW5nIHZvbHVtZSBhbmQgbWFya2V0IGNhcCBhcmUgbm90IHN0YXRpc3RpY2FsbHkgc2lnbmlmaWNhbnQsIHdoaWNoIG1lYW5zIHRoYXQgdGhleSBkbyBub3Qgc3Ryb25nbHkgZXhwbGFpbiBwcmljZSB2b2xhdGlsaXR5IGZvciBsYXJnZXIgY3J5cHRvY3VycmVuY2llcy4gVGhlIFItc3F1YXJlZCBvZiBvZiAwLjAyOCBpcyB2ZXJ5IGxvdywgd2hpY2ggbWVhbnMgdGhhdCB0aGUgbW9kZWwgZXhwbGFpbnMgdmVyeSBsaXR0bGUgb2YgdGhlIHZhcmlhdGlvbiBpbiB2b2xhdGlsaXR5LiANCg0KIyMjIFJlZ3Jlc3Npb24gMzogUmVncmVzc2lvbiB1c2luZyBhIEJpbmFyeSBWYXJpYWJsZSANCmBgYHtyfQ0KY3J5cHRvX2RhdGEkbGFyZ2VfY3J5cHRvIDwtIGlmZWxzZShjcnlwdG9fZGF0YSRtYXJrZXRfY2FwID49IDEwMDAwMDAwMDAwLCAxLCAwKSAjY3JlYXRlcyBhIGJpbmFyeSB2YXJpYWJsZSB3aGVyZSAxID0gbWFya2V0IGNhcCBpcyAkMTBCIG9yIGhpZ2hlciBhbmQgMCA9IGJlbG93ICQxMEINCg0KbW9kZWwzIDwtIGxtKHByaWNlX3ZvbGF0aWxpdHkgfiBsb2dfdm9sdW1lICsgbG9nX21hcmtldF9jYXAgKyB2b2x1bWVfdG9fbWFya2V0X2NhcF9yYXRpbyArIGxhcmdlX2NyeXB0bywgZGF0YSA9IGNyeXB0b19kYXRhKSAjcnVucyByZWdyZXNzaW9uIHVzaW5nIG1hcmtldCBjYXAsIHZvbHVtZSwgdm9sdW1lIHRvIG1hcmtldCBjYXAgcmF0aW8sIGFuZCB0aGUgbGFyZ2UgY3J5cHRvIGJpbmFyeSB2YXJpYWJsZSB0byBleHBsYWluIHByaWNlIHZvbGF0aWxpdHkNCnN1bW1hcnkobW9kZWwzKQ0KYGBgDQpSZWdyZXNzaW9uIDMgSW50ZXJwcmV0YXRpb246IFRoaXMgcmVncmVzc2lvbiBpcyBzdGF0aXN0aWNhbGx5IHNpZ25pZmljYW50IG92ZXJhbGwgYW5kIGV4cGxhaW5zIGFib3V0IDIyLjQlIG9mIHZvbGF0aWxpdHkuIEhvd2V2ZXIsIG5vbmUgb2YgdGhlIGluZGl2aWR1YWwgdmFyaWFibGVzIGFyZSBzaWduaWZpY2FudC4gVGhlcmVmb3JlLCB0aGUgcmVzdWx0cyBkbyBub3QgY2xlYXJseSBzaG93IHRoYXQgbGFyZ2VyIGNyeXB0b2N1cnJlbmNpZXMgaGF2ZSBsb3dlciB2b2xhdGlsaXR5Lg0KDQojIyMgQ3JlYXRpbmcgVGFibGUgdXNpbmcgU3RhcmdhemVyIA0KYGBge3J9DQojaW5zdGFsbHMgc3RhcmdhemVyIGludG8gUiANCmluc3RhbGwucGFja2FnZXMoInN0YXJnYXplciIpIA0KbGlicmFyeShzdGFyZ2F6ZXIpIA0KDQpzdGFyZ2F6ZXIobW9kZWwxLCBtb2RlbDIsIG1vZGVsMywgI3VzZXMgdGhlIG1vZGVscyBuZWVkZWQgZm9yIHRoZSB0YWJsZSANCiAgICAgICAgICB0eXBlID0gInRleHQiLA0KICAgICAgICAgIHRpdGxlID0gIkNyeXB0b2N1cnJlbmN5IFJlZ3Jlc3Npb24gUmVzdWx0cyIsICNhZGRzIHRoZSB0aXRsZSB0byB0aGUgdGFibGUgDQogICAgICAgICAgZGVwLnZhci5sYWJlbHMuaW5jbHVkZSA9IEZBTFNFLCAjcmVtb3ZlcyBkZXBlbmRlbnQgdmFyaWFibGUgbGFiZWwgDQogICAgICAgICAgY29sdW1uLmxhYmVscyA9IGMoIlJlc2VhcmNoIE1vZGVsIiwgIkZpbHRlcmVkIE1vZGVsIiwgIlByZWZlcnJlZCBNb2RlbCIpLCAjYWRkcyBsYWJlbHMgdG8gZWFjaCBjb2x1bW4gdG8gdGhlIGNvcnJlc3BvbmRpbmcgbW9kZWwgDQogICAgICAgICAgY292YXJpYXRlLmxhYmVscyA9IGMoIkxvZyBUcmFkaW5nIFZvbHVtZSIsIkxvZyBNYXJrZXQgQ2FwIiwiVm9sdW1lLXRvLU1hcmtldC1DYXAgUmF0aW8iLCJMYXJnZSBDcnlwdG8gRHVtbXkiKSwgI2FkZHMgdmFyaWFibGUgbGFiZWxzIHRvIHRoZSB0YWJsZSANCiAgICAgICAgICBkaWdpdHMgPSAzLCAjcm91bmRzIHRoZSBudW1iZXJzIHRvIHRocmVlIGRlY2ltYWwgcGxhY2VzIA0KICAgICAgICAgIG91dCA9ICJjcnlwdG9fcmVncmVzc2lvbl9yZXN1bHRzLnR4dCIpICNzYXZlcyB0aGUgdGFibGUgaW50byBjb21wdXRlciANCmBgYA0KDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkRhdGEgQW5hbHlzaXMgUmVncmVzc2lvbiBNb2RlbHMiDQpvdXRwdXQ6DQogIGh0bWxfbm90ZWJvb2s6IGRlZmF1bHQNCiAgcGRmX2RvY3VtZW50OiBkZWZhdWx0DQotLS0NCiMjIFRoaXMgbm90ZWJvb2sgaW1wb3J0cyBteSBjcnlwdG9jdXJyZW5jeSBkYXRhIHNldCBhbmQgcnVucyBtdWx0aXBsZSByZWdyZXNzaW9ucyANCg0KIyMjIFNvdXJjZXM6IA0KMS4gTGVjdHVyZSAxMCBOb3RlcyANCjIuIExlY3R1cmUgMTEgTm90ZXMNCjMuIGh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9eGNaaWIzcUFjMzAgKFlvdVR1YmUpDQo0LiBodHRwczovL3d3dy5jb2RlY2FkZW15LmNvbS9sZWFybi9sZWFybi1saW5lYXItcmVncmVzc2lvbi1pbi1yL21vZHVsZXMvbGluZWFyLXJlZ3Jlc3Npb24taW4tci9jaGVhdHNoZWV0DQoNCiMjIyBQcmVwYXJpbmcgRGF0YSBmb3IgUmVncmVzc2lvbnMgDQpgYGB7cn0NCmNyeXB0b19kYXRhIDwtIHJlYWQuY3N2KCJDOi9Vc2Vycy9sYXVyYS9jcnlwdG9fZGF0YS5jc3YiKSAjaW1wb3J0cyB0aGUgY3J5cHRvIGRhdGEgc2V0DQpuYW1lcyhjcnlwdG9fZGF0YSkgI2NoZWNrcyB0aGUgY29sdW1uIG5hbWVzIA0Kc3RyKGNyeXB0b19kYXRhKSAjY2hlY2tzIHRoZSBzdHJ1Y3R1cmUgb2YgdGhlIGRhdGEgc2V0DQpgYGANCmBgYHtyfQ0KI2xvZ3MgZG9sbGFyIHZhbHVlcyBmb3IgYm90aCBtYXJrZXQgY2FwIGFuZCB0b3RhbCB2b2x1bWUgDQpjcnlwdG9fZGF0YSRsb2dfbWFya2V0X2NhcCA8LSBsb2coY3J5cHRvX2RhdGEkbWFya2V0X2NhcCkgDQpjcnlwdG9fZGF0YSRsb2dfdm9sdW1lIDwtIGxvZyhjcnlwdG9fZGF0YSR0b3RhbF92b2x1bWUpDQpgYGANCg0KIyMjIFJlZ3Jlc3Npb24gMTogRnVsbCBEYXRhIFNldCBPTFMNCmBgYHtyfQ0KbW9kZWwxIDwtIGxtKHByaWNlX3ZvbGF0aWxpdHkgfiBsb2dfdm9sdW1lICsgbG9nX21hcmtldF9jYXAsIGRhdGEgPSBjcnlwdG9fZGF0YSkjcnVucyByZWdyZXNzaW9uIHVzaW5nIHZvbHVtZSBhbmQgbWFya2V0IGNhcCB0byBleHBsYWluIHByaWNlIHZvbGF0aWxpdHkgDQpzdW1tYXJ5KG1vZGVsMSkgI3ByaW50cyByZXN1bHRzIA0KYGBgDQpSZWdyZXNzaW9uIDEgSW50ZXJwcmV0YXRpb246IE1hcmtldCBjYXAgaXMgc2lnbmlmaWNhbnQgYW5kIGlzIGxpbmtlZCB0byBsb3dlciB2b2xhdGlsaXR5LiBUcmFkaW5nIHZvbHVtZSBpcyBvbmx5IHdlYWtseSBzaWduaWZpY2FudCBhbmQgbGlua2VkIHRvIGhpZ2hlciB2b2xhdGlsaXR5LiBUaGVyZWZvcmUsIHRoZSBtb2RlbCBleHBsYWlucyBhYm91dCA4LjU4JSBvZiB2b2xhdGlsaXR5Lg0KDQojIyMgUmVncmVzc2lvbiAyOiBGaWx0ZXJlZCBEYXRhIFNldA0KYGBge3J9DQpmaWx0ZXJlZF9kYXRhIDwtIHN1YnNldChjcnlwdG9fZGF0YSwgbWFya2V0X2NhcCA+IDEwMDAwMDAwMDAwKSAjZmlsdGVycyBkYXRhIHNldA0KbW9kZWwyIDwtIGxtKHByaWNlX3ZvbGF0aWxpdHkgfiBsb2dfdm9sdW1lICsgbG9nX21hcmtldF9jYXAsZGF0YSA9IGZpbHRlcmVkX2RhdGEpICNydW5zIHJlZ3Jlc3Npb24gb24gdGhlIGZpbHRlcmVkIGRhdGEgdG8gc2VlIGhvdyB0aGUgdm9sdW1lIGFuZCBtYXJrZXQgY2FwIGV4cGxhaW4gcHJpY2Ugdm9sYXRpbGl0eSANCg0Kc3VtbWFyeShtb2RlbDIpICNwcmludHMgcmVzdWx0cyANCmBgYA0KUmVncmVzc2lvbiAyIEludGVycHJldGF0aW9uOiBGb3IgY3J5cHRvY3VycmVuY2llcyB0aGF0IGFyZSBhYm92ZSAkMTAgYmlsbGlvbiBpbiBtYXJrZXQgY2FwLCBuZWl0aGVyIHRyYWRpbmcgdm9sdW1lIG5vciBtYXJrZXQgY2FwIGlzIHNpZ25pZmljYW50LiBUaGVyZWZvcmUsIHRoZSBtb2RlbCBleHBsYWlucyBvbmx5IGFib3V0IDIuMSUgb2Ygdm9sYXRpbGl0eS4gDQoNCiMjIyBSZWdyZXNzaW9uIDM6IFJlZ3Jlc3Npb24gdXNpbmcgYSBCaW5hcnkgVmFyaWFibGUgDQpgYGB7cn0NCmNyeXB0b19kYXRhJGxhcmdlX2NyeXB0byA8LSBpZmVsc2UoY3J5cHRvX2RhdGEkbWFya2V0X2NhcCA+PSAxMDAwMDAwMDAwMCwgMSwgMCkgI2NyZWF0ZXMgYSBiaW5hcnkgdmFyaWFibGUgd2hlcmUgMSA9IG1hcmtldCBjYXAgaXMgJDEwQiBvciBoaWdoZXIgYW5kIDAgPSBiZWxvdyAkMTBCDQoNCm1vZGVsMyA8LSBsbShwcmljZV92b2xhdGlsaXR5IH4gbG9nX3ZvbHVtZSArIGxvZ19tYXJrZXRfY2FwICsgdm9sdW1lX3RvX21hcmtldF9jYXBfcmF0aW8gKyBsYXJnZV9jcnlwdG8sIGRhdGEgPSBjcnlwdG9fZGF0YSkgI3J1bnMgcmVncmVzc2lvbiB1c2luZyBtYXJrZXQgY2FwLCB2b2x1bWUsIHZvbHVtZSB0byBtYXJrZXQgY2FwIHJhdGlvLCBhbmQgdGhlIGxhcmdlIGNyeXB0byBiaW5hcnkgdmFyaWFibGUgdG8gZXhwbGFpbiBwcmljZSB2b2xhdGlsaXR5DQpzdW1tYXJ5KG1vZGVsMykNCmBgYA0KUmVncmVzc2lvbiAzIEludGVycHJldGF0aW9uOiBUaGUgbW9kZWwgYWRkcyB0cmFkaW5nIHZvbHVtZSwgbWFya2V0IGNhcCwgdm9sdW1lIHRvIG1hcmtldCBjYXAgcmF0aW8sIGFuZCBhIGxhcmdlIGNyeXB0byBkdW1teS4gTm9uZSBvZiB0aGUgdmFyaWFibGVzIGFyZSBzdGF0aXN0aWNhbGx5IHNpZ25pZmljYW50LiBUaGUgbW9kZWwgZXhwbGFpbnMgYWJvdXQgMTAuMSUgb2Ygdm9sYXRpbGl0eSwgYW5kIGl0IGRvZXMgbm90IHN0cm9uZ2x5IHN1cHBvcnQgdGhhdCBsYXJnZXIgY3J5cHRvY3VycmVuY2llcyBoYXZlIGxvd2VyIHZvbGF0aWxpdHkuIA0KDQojIyMgQ3JlYXRpbmcgVGFibGUgdXNpbmcgU3RhcmdhemVyIA0KYGBge3J9DQojaW5zdGFsbHMgc3RhcmdhemVyIGludG8gUiANCmluc3RhbGwucGFja2FnZXMoInN0YXJnYXplciIpIA0KbGlicmFyeShzdGFyZ2F6ZXIpIA0KDQpzdGFyZ2F6ZXIobW9kZWwxLCBtb2RlbDIsIG1vZGVsMywgI3VzZXMgdGhlIG1vZGVscyBuZWVkZWQgZm9yIHRoZSB0YWJsZSANCiAgICAgICAgICB0eXBlID0gInRleHQiLA0KICAgICAgICAgIHRpdGxlID0gIkNyeXB0b2N1cnJlbmN5IFJlZ3Jlc3Npb24gUmVzdWx0cyIsICNhZGRzIHRoZSB0aXRsZSB0byB0aGUgdGFibGUgDQogICAgICAgICAgY29sdW1uLmxhYmVscyA9IGMoIlJlc2VhcmNoIE1vZGVsIiwgIkZpbHRlcmVkIE1vZGVsIiwgIlByZWZlcnJlZCBNb2RlbCIpLCAjYWRkcyBsYWJlbHMgdG8gZWFjaCBjb2x1bW4gdG8gdGhlIGNvcnJlc3BvbmRpbmcgbW9kZWwgDQogICAgICAgICAgY292YXJpYXRlLmxhYmVscyA9IGMoIkxvZyBUcmFkaW5nIFZvbHVtZSIsIkxvZyBNYXJrZXQgQ2FwIiwiVm9sdW1lLXRvLU1hcmtldC1DYXAgUmF0aW8iLCJMYXJnZSBDcnlwdG8gRHVtbXkiKSwgI2FkZHMgdmFyaWFibGUgbGFiZWxzIHRvIHRoZSB0YWJsZSANCiAgICAgICAgICBkaWdpdHMgPSAzLCAjcm91bmRzIHRoZSBudW1iZXJzIHRvIHRocmVlIGRlY2ltYWwgcGxhY2VzIA0KICAgICAgICAgIG91dCA9ICJjcnlwdG9fcmVncmVzc2lvbl9yZXN1bHRzLmh0bWwiKSAjc2F2ZXMgdGhlIHRhYmxlIGludG8gY29tcHV0ZXIgDQpgYGANCg0K</div>
 
 
 
